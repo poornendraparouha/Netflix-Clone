@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './TitleCards.css'
-import cards_data from '../../assets/cards/Cards_data'
 import { Link } from 'react-router-dom'
 
 const TitleCards = ({title, category}) => {
@@ -13,7 +12,7 @@ const TitleCards = ({title, category}) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjJjZGQ3MmZkMzU0Yjk0MjNhNWViZjA0NzM5YTc0NCIsIm5iZiI6MTc1MjczNDU0Ny44NzksInN1YiI6IjY4Nzg5YjUzN2ZhYWQ0NzY3YTIwM2Q3OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.cTE5Vy4ZKJaKuF0CNL7ursuSioD8WoafY_vj5Dj9BOc'
+      Authorization: import.meta.env.VITE_TMDB_API_KEY
     }
   };
   
