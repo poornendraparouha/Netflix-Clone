@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const TitleCards = ({title, category}) => {
 
   const [apiData, setApiData] = useState([]);
-
   const cardsRef = useRef();
 
   const options = {
@@ -15,7 +14,6 @@ const TitleCards = ({title, category}) => {
       Authorization: import.meta.env.VITE_TMDB_API_KEY
     }
   };
-  
 
   const handleWheel = (event)=>{
     event.preventDefault();

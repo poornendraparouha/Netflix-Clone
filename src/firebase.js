@@ -3,7 +3,8 @@ import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, si
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { toast } from "react-toastify";
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration environment variables
+
 const firebaseConfig = {
 	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
 	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
