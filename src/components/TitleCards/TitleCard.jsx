@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
-import './TitleCards.css'
+import './TitleCard.css'
 import { Link } from 'react-router-dom'
 
-const TitleCards = ({title, category}) => {
+const TitleCard = ({title, category}) => {
   const [apiData, setApiData] = useState([]);
   const cardsRef = useRef();
 
@@ -43,4 +43,4 @@ const TitleCards = ({title, category}) => {
   )
 }
 
-export default TitleCards
+export default TitleCard

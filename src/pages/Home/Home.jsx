@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
-import TitleCards from '../../components/TitleCards/TitleCards.jsx'
+import TitleCard from '../../components/TitleCards/TitleCard.jsx'
 import hero_banner from '../../assets/hero_banner.jpg'
 import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
@@ -22,14 +22,14 @@ const Home = () => {
             <button className='btn light-btn'><img src={play_icon} alt="play icon" />Play Now</button>
             <button className='btn dark-btn'><img src={info_icon} alt="" />More Info</button>
           </div>
-          <TitleCards />
+          <TitleCard />
         </div>
       </div>
       <div className="more-cards">
-        <TitleCards title={"Blockbuster Movies"} category={"top_rated"}/>
-        <TitleCards title={"Only on Netflix"} category={"popular"}/>
-        <TitleCards title={"Upcoming"} category={"upcoming"}/>
-        <TitleCards title={"Top Pics for You"} category={"now_playing"}/>
+        <TitleCard title={"Blockbuster Movies"} category={"top_rated"}/>
+        <TitleCard title={"Only on Netflix"} category={"popular"}/>
+        <TitleCard title={"Upcoming"} category={"upcoming"}/>
+        <TitleCard title={"Top Pics for You"} category={"now_playing"}/>
       </div>
       <Footer />
     </div>
